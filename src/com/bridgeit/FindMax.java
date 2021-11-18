@@ -48,5 +48,22 @@ public class FindMax {
 		return max;
 
 	}
+
+	//Refactor all the 3 to One Generic Method and find the maximum
+
+
+	public <T extends Comparable<T>>  T getMaxValue (T num1, T num2, T num3) {
+	
+		T max = num1;
+
+		if (max.compareTo(num2) < 0) {
+			max = num2;
+
+		} else if (max.compareTo(num3) < 0) {
+			max=num3;
+		}
+		return max;
+
+	}
 	
 	

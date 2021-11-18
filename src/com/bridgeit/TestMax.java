@@ -12,21 +12,21 @@ class TestMax {
 	@Test
 	public void maxFirstIntegerTest() {
 		FindMax findMax = new FindMax();
-		int maxNum1= findMax.getMaxIntValue(101, 30, 70);
+		int maxNum1= findMax.getMaxValue(101, 30, 70);
 		Assert.assertEquals(101, maxNum1);
 	}
 	
 	@Test
 	public void maxSecondIntegerTest() {
 		FindMax findMax = new FindMax();
-		int maxNum2= findMax.getMaxIntValue(101, 200, 70);
+		int maxNum2= findMax.getMaxValue(101, 200, 70);
 		Assert.assertEquals(101, maxNum2);
 	}
 	
 	@Test
 	public void maxThirdIntegerTest() {
 		FindMax findMax = new FindMax();
-		int maxNum3= findMax.getMaxIntValue(101, 30, 300);
+		int maxNum3= findMax.getMaxValue(101, 30, 300);
 		Assert.assertEquals(101, maxNum3);
 	}
 
@@ -37,14 +37,14 @@ class TestMax {
 	@Test
 	public void maxFirstDoubleTest() {
 		FindMax findMax = new FindMax();
-		double maxNum1= findMax.getMaxDoubleValue(101.67, 30.30, 70.87);
+		double maxNum1= findMax.getMaxValue(101.67, 30.30, 70.87);
 		Assert.assertEquals(101.67, maxNum1);
 	}
 	
 	@Test
 	public void maxSecondDoubleTest() {
 		FindMax findMax = new FindMax();
-		double maxNum2= findMax.getMaxDoubleValue(101.86, 200.87, 70.31);
+		double maxNum2= findMax.getMaxValue(101.86, 200.87, 70.31);
 		Assert.assertEquals(101, maxNum2);
 	}
 	
@@ -60,22 +60,24 @@ class TestMax {
 	@Test
 	public void maxFirstStringTest() {
 		FindMax findMax = new FindMax();
-		String max1= findMax.getMaxStringValue("vdgvgveg", "wx", "edd");
+		String max1= findMax.getMaxValue("vdgvgveg", "wx", "edd");
 		Assert.assertEquals(101, max1);
 	}
 	
 	@Test
 	public void maxSecondStringTest() {
 		FindMax findMax = new FindMax();
-		String max2= findMax.getMaxStringValue("vdgvgveg", "wxtytytyttuytuytu", "edd");
+		String max2= findMax.getMaxValue("vdgvgveg", "wxtytytyttuytuytu", "edd");
 		Assert.assertEquals(101, max2);
 	}
 	
 	@Test
 	public void maxThirdStringTest() {
 		FindMax findMax = new FindMax();
-		String max3= findMax.getMaxStringValue("vdgvgveg", "wx", "eddguygyyguguyguyguyguygugu");
+		String max3= findMax.getMaxValue("vdgvgveg", "wx", "eddguygyyguguyguyguyguygugu");
 		Assert.assertEquals(101, max3);
 	}
 
+
+	
 	
