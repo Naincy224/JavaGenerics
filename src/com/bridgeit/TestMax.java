@@ -7,7 +7,7 @@ class TestMax {
 	
 	
 		
-
+	//Test cases for integer
 	
 	@Test
 	public void maxFirstIntegerTest() {
@@ -29,4 +29,30 @@ class TestMax {
 		int maxNum3= findMax.getMaxIntValue(101, 30, 300);
 		Assert.assertEquals(101, maxNum3);
 	}
+
+
+
+	//Test cases for double
+
+	@Test
+	public void maxFirstDoubleTest() {
+		FindMax findMax = new FindMax();
+		double maxNum1= findMax.getMaxDoubleValue(101.67, 30.30, 70.87);
+		Assert.assertEquals(101.67, maxNum1);
+	}
+	
+	@Test
+	public void maxSecondDoubleTest() {
+		FindMax findMax = new FindMax();
+		double maxNum2= findMax.getMaxDoubleValue(101.86, 200.87, 70.31);
+		Assert.assertEquals(101, maxNum2);
+	}
+	
+	@Test
+	public void maxThirdDoubleTest() {
+		FindMax findMax = new FindMax();
+		double maxNum3= findMax.getMaxValue(101.44, 30.66, 300.45);
+		Assert.assertEquals(101, maxNum3);
+	}
+	
 	
