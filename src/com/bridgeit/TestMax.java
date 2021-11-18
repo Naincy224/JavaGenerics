@@ -55,4 +55,27 @@ class TestMax {
 		Assert.assertEquals(101, maxNum3);
 	}
 	
+	//Test cases for string
+	
+	@Test
+	public void maxFirstStringTest() {
+		FindMax findMax = new FindMax();
+		String max1= findMax.getMaxStringValue("vdgvgveg", "wx", "edd");
+		Assert.assertEquals(101, max1);
+	}
+	
+	@Test
+	public void maxSecondStringTest() {
+		FindMax findMax = new FindMax();
+		String max2= findMax.getMaxStringValue("vdgvgveg", "wxtytytyttuytuytu", "edd");
+		Assert.assertEquals(101, max2);
+	}
+	
+	@Test
+	public void maxThirdStringTest() {
+		FindMax findMax = new FindMax();
+		String max3= findMax.getMaxStringValue("vdgvgveg", "wx", "eddguygyyguguyguyguyguygugu");
+		Assert.assertEquals(101, max3);
+	}
+
 	

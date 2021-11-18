@@ -31,5 +31,22 @@ public class FindMax {
 		return max;
 
 	}
+
+	// Given 3 Strings find the maximum
+
+
+	public String getMaxStringValue(String st1, String st2, String st3) {
+	
+	String max = st1;
+
+		if (max.compareTo(st2) < 0) {
+			max = st2;
+
+		} else if (max.compareTo(st3) < 0) {
+			max=st3;
+		}
+		return max;
+
+	}
 	
 	
